@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="http://cloudinary.com/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/cloudinary-core/cloudinary-core-shrinkwrap.js"></script>
+    <title>Cloudinary Widget</title>
+  </head>
+  <body>
+    <div id="main">
+      <div class="text-container">
+        <h1>Cloudinary Upload Tool</h1>
+        <div class="description">
+          <h2>Upload Files to Cloudinary Using the Upload Widget</h2>
+          <p>Perform a signed upload using the upload widget.</p>
+          <p>Click "Upload Files" to open the upload widget.</p>
+          <p>*Image size is limited to 750x750</p>
+        </div>
+        <div><button id="upload-button">Upload Files</button></div>
+        <div id="server-status">Loading..</div>
+      </div>
+
+      <div id="gallery-container">
+        <!-- Images added dynamically -->
+      </div>
+
+      <div class="delete-container">
+        <p>Delete all images with the tag: <input type="text" id="input-tag" value="cl-chen"/></p>
+        <button id="delete-button">Delete All</button>
+        <p id="delete-result"></p>
+      </div>
+    </div>
+
+    <!-- cloudinary upload widget -->
+    <script
+      src="https://widget.cloudinary.com/v2.0/global/all.js"
+      type="text/javascript"
+    ></script>
+
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>

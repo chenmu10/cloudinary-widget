@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+#main {
+  margin: 0 0 10px 10px;
+}
+
+#server-status {
+  margin: 10px 0;
+}
+
+button {
+  color: #ffffff;
+  font-size: 1.1em;
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  height: 55px;
+  width: 160px;
+}
+
+.text-container {
+  margin-bottom: 10px;
+}
+
+#upload-button {
+  background-color: #412df7;
+}
+
+#delete-button {
+  background-color: #e00d0d;
+}
+
+#upload-button:hover {
+  background-color: #190c8d;
+}
+
+#delete-button:hover {
+  background-color: #921414;
+}
+
+#gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.card {
+  width:20%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.card:hover {
+  border: 1px solid #777;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.file-description {
+  text-align: left;
+  margin-left: 5px;
+  padding: 3px;
+  line-height: 150%;
+  word-break: break-all;  
+}
+
+.file-name {
+  font-weight: 700;
+}
+.file-tag {
+  margin: 10px 0;
+}
+.tag {
+  padding: 4px 8px;
+  border: 1px solid #e5eaed;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #788697;
+}
