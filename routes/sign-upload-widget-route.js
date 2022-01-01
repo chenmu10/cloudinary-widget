@@ -8,7 +8,7 @@ const cloudName = cloudinary.config().cloud_name;
 const apiKey = cloudinary.config().api_key;
 
 
-router.get("/", function (req, res, next) {
+router.get("/", function (req, res) {
   const sig = signature.signUploadWidget();
   res.json({
     signature: sig.signature,
